@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 56px;
+    position: fixed;
+
+}
+.logo {
+    max-width: 155px;
+    height: auto;
+    transition: all 0.5s ease;
+}
+.logo img {
+    max-width: 100%;
+}
+.nav>ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav ul li{
+    /* margin: 0 1.9em; */
+    list-style-type: none;
+}
+.nav>ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.5em;
+    padding: calc(36px / 2) 1.2em;
+}
+.nav ul li {
+    position: relative;
+}
+.nav ul.nav--sub {
+    position: absolute;
+    background-color: #222222;
+    top: 3.9em;
+    padding: 0;
+    display: none;
+} 
+.nav li:hover >.nav--sub{
+    display: block;
+}
+
+.nav ul.nav--sub li {
+    padding: 0.4em 1em;
+    min-width: 15em;
+    border: #000000 solid 1px ;
+    font-size: 1.5rem;
+}
+.nav>ul>li>a:hover,.nav--sub li:hover>a {
+    background-color: #222222;
+    color: #7db834;
+}
+.nav--sub a {
+    padding: 0 !important;
+}
+.nav .nav--sub .nav--sub {
+    left: 14.9em;
+    top: -0.1em;
+}
+.toolbar{
+    color: #ffff;
+    display: flex;
+    
+}
+.toolbar i:first-child {
+    margin-right: 0.5em;
+}
+.fa-magnifying-glass,.fa-cart-shopping{
+    font-size: 2.2em;
+    font-weight: 300;
+}
+.fa-magnifying-glass:hover,.fa-cart-shopping:hover {
+    color: #7db834;
+}
+
+.toolbar i {
+    cursor: pointer;
+}
+/*  thanh tìm kiếm */
+
+.search {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    /* display: none; */
+    overflow: hidden;
+    visibility: hidden;
+}
+#form-search{
+    background-color: rgb(0, 0, 0);
+    height: 20vh;
+    position: absolute;
+    /* top: 5rem; */
+    top: -20rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    transition: all .5s ease;
+}
+.top{
+    top: 5rem !important;
+}
+#form-search input {
+    background-color: #222222;
+    font-size: 2rem;
+    border: none;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    color: #ffff;
+    outline: none;
+}
+#form-search i {
+    position: absolute;
+    right: 9%;
+    top: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+body{
+    height: 10000px;
+}
+.class{
+    max-width: 170px;
+
+}
